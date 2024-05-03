@@ -24,7 +24,7 @@ ERRORS: I have added pictures of some of the errors. Since I don’t have the ba
 where the desired speed should be coming from some sort of speed scheduler. 
 - Regarding the speed scheduler, I would recommend using the current state of the vehicle and determine where the vehicle is on the track and adjusts the speed depending if the vehicle is on the straightaway or on the curved sections.
 Remember that at the curved sections there is a max speed the vehicle can go before slipping and going off track.
-- Now in the long dynamics portion of the driver model, you should use the Vx that comes from the long dynamics block and the desired speed from the speed scheduler. You will also have to add to your regen braking logic as the requirements state that 
+- Now in the long dynamics portion of the driver model, you should use the Vx that comes from the long dynamics block and the desired speed from the speed scheduler. You will also have to add to your regen braking logic as the requirements state that
 the regen and friction braking percentages changes depending on how fast the vehicle is going.
   - Speed < 5 mph: 5% Regen, 95% Friction
   - Speed >= 25 mph: 95% Regen, 5% Friction
@@ -34,3 +34,10 @@ the regen and friction braking percentages changes depending on how fast the veh
 - SOC = 0.8 - integral(Icell)/C
 
 You're on the right track so I would suggest taking the tips I mentioned and try implementing them! I will go over this more on Friday (Dr. Swamy giving me the whole class time to lecture)
+
+
+FINAL SUBMISSION: How to run stays the same. Simply run the main.m file with the model open in order for the scripts to run with the slx file. A plot will show with the track and car setup as desired.
+
+ISSUES: I could never get the model to setup correctly and even though I wrapped the error in order for it to follow the track it never went arounde correctly. Something just never added up and it made the project run worse than ever. A base model and scripts are being turned in for simplicity. The other work is too out of wack to turn in and show a visualization of the track. For some reason the X&Y workspaces will not grab the values desired and will not recognize for a plot on plot graph. It is wildly frustrating and I am not sure what to do. I am aware that this is no where near what is being asked but it is better than nothing at all.
+
+A new folder titled Project 4 Final Submission has been created with a zip file with all necessary files and model needed.
